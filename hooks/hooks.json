@@ -1,0 +1,18 @@
+{
+  "hooks": [
+    {
+      "event": "post-skill",
+      "skill": "analyze-dashboards",
+      "description": "Auto-post critical findings to Slack when dashboard analysis detects critical anomalies",
+      "condition": "result.findings_by_severity.critical > 0",
+      "action": {
+        "type": "invoke-skill",
+        "skill": "route-to-slack",
+        "filter": {
+          "severity": ["critical"],
+          "message_type": "critical_alert"
+        }
+      }
+    }
+  ]
+}

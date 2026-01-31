@@ -1,0 +1,29 @@
+{
+  "name": "strategy-command-center",
+  "version": "1.0.0",
+  "description": "Strategy Command Center — multi-agent orchestration that analyzes Strategy Cloud dashboards, detects anomalies, enriches findings with web research, and routes intelligence to enterprise tools (HubSpot, Atlassian, Asana, Slack, Canva, Figma).",
+  "namespace": "strategy-command-center",
+  "skills": [
+    "skills/analyze-dashboards/SKILL.md",
+    "skills/enrich-findings/SKILL.md",
+    "skills/synthesize-by-lob/SKILL.md",
+    "skills/route-to-hubspot/SKILL.md",
+    "skills/route-to-atlassian/SKILL.md",
+    "skills/route-to-asana/SKILL.md",
+    "skills/route-to-slack/SKILL.md",
+    "skills/generate-visuals/SKILL.md",
+    "skills/generate-executive-summary/SKILL.md"
+  ],
+  "commands": [
+    "commands/strategy-review.md",
+    "commands/quick-scan.md",
+    "commands/ops-review.md",
+    "commands/sales-review.md",
+    "commands/executive-briefing.md"
+  ],
+  "agents": [
+    "agents/command-center.md"
+  ],
+  "hooks": "hooks/hooks.json",
+  "mcpServers": ".mcp.json"
+}

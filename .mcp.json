@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "strategy": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/strategy-mcp-server"]
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/slack-mcp-server"]
+    },
+    "asana": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/asana-mcp-server"]
+    },
+    "hubspot": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/hubspot-mcp-server"]
+    },
+    "atlassian": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/atlassian-mcp-server"]
+    },
+    "canva": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/canva-mcp-server"]
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/figma-mcp-server"]
+    }
+  }
+}

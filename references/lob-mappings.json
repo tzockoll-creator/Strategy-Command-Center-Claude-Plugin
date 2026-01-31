@@ -1,0 +1,66 @@
+{
+  "lines_of_business": {
+    "sales": {
+      "label": "Sales",
+      "metrics": ["revenue", "pipeline", "win_rate", "quota_attainment", "deal_velocity", "average_deal_size", "conversion_rate"],
+      "dashboard_keywords": ["sales", "revenue", "pipeline", "deals", "quota", "bookings"],
+      "primary_tools": ["hubspot", "asana"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "marketing": {
+      "label": "Marketing",
+      "metrics": ["leads", "mql", "sql", "campaign_roi", "conversion_rate", "cpl", "brand_awareness"],
+      "dashboard_keywords": ["marketing", "leads", "campaigns", "conversion", "brand", "demand_gen"],
+      "primary_tools": ["hubspot", "asana"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "finance": {
+      "label": "Finance",
+      "metrics": ["revenue", "margin", "cash_flow", "budget_variance", "forecast_accuracy", "opex", "ebitda"],
+      "dashboard_keywords": ["finance", "p&l", "cash_flow", "budget", "forecast", "margin", "profitability"],
+      "primary_tools": ["asana", "slack"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "operations": {
+      "label": "Operations",
+      "metrics": ["fulfillment_rate", "inventory_turns", "cycle_time", "quality_rate", "on_time_delivery", "capacity_utilization"],
+      "dashboard_keywords": ["operations", "ops", "fulfillment", "inventory", "logistics", "supply_chain", "quality"],
+      "primary_tools": ["atlassian", "asana"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "hr": {
+      "label": "HR / People",
+      "metrics": ["headcount", "turnover_rate", "engagement_score", "recruiting_pipeline", "time_to_fill", "retention_rate"],
+      "dashboard_keywords": ["hr", "people", "headcount", "turnover", "engagement", "recruiting", "talent"],
+      "primary_tools": ["asana", "slack"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "customer_success": {
+      "label": "Customer Success",
+      "metrics": ["nps", "csat", "churn_rate", "retention_rate", "support_tickets", "response_time", "expansion_revenue"],
+      "dashboard_keywords": ["customer", "success", "nps", "csat", "churn", "retention", "support"],
+      "primary_tools": ["hubspot", "asana"],
+      "assignee": "",
+      "asana_project": ""
+    },
+    "executive": {
+      "label": "Executive",
+      "metrics": ["company_kpis", "cross_lob_rollup", "strategic_initiatives", "board_metrics"],
+      "dashboard_keywords": ["executive", "ceo", "board", "company", "strategic", "kpi", "scorecard"],
+      "primary_tools": ["slack", "canva", "figma"],
+      "assignee": "",
+      "asana_project": ""
+    }
+  },
+  "assignment_rules": {
+    "primary": "Assign to LOB based on dashboard folder location",
+    "secondary": "If folder is ambiguous, assign based on dashboard name keywords",
+    "tertiary": "If name is ambiguous, assign based on metric types in dashboard content",
+    "fallback": "Assign to Executive if no LOB match"
+  }
+}

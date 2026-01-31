@@ -1,0 +1,91 @@
+{
+  "anomaly_thresholds": {
+    "spike": {
+      "description": "Sudden increase in metric value vs prior period",
+      "default_threshold_percent": 20,
+      "severity": "warning"
+    },
+    "drop": {
+      "description": "Sudden decrease in metric value vs prior period",
+      "default_threshold_percent": 15,
+      "severity": "critical"
+    },
+    "outlier": {
+      "description": "Data point far outside normal range (beyond 2 standard deviations)",
+      "std_deviations": 2,
+      "severity": "warning"
+    },
+    "gap": {
+      "description": "Missing data periods where values are null or absent",
+      "severity": "warning"
+    }
+  },
+  "threshold_breaches": {
+    "critical": {
+      "description": "Red indicators showing critical status or target missed by >20%",
+      "indicators": ["red_status", "critical_icon", "negative_variance_gt_20"],
+      "severity": "critical"
+    },
+    "warning": {
+      "description": "Yellow/warning indicators approaching threshold or target missed by 10-20%",
+      "indicators": ["yellow_status", "warning_icon", "negative_variance_10_20"],
+      "severity": "warning"
+    },
+    "target_miss": {
+      "description": "Actual vs budget/forecast with negative variance",
+      "severity": "warning"
+    }
+  },
+  "trend_patterns": {
+    "sustained_movement": {
+      "description": "Consecutive periods moving in the same direction",
+      "min_consecutive_periods": 3,
+      "severity": "warning"
+    },
+    "acceleration": {
+      "description": "Rate of change increasing period over period",
+      "severity": "warning"
+    },
+    "reversal": {
+      "description": "Direction change after an established trend (3+ periods)",
+      "severity": "informational"
+    }
+  },
+  "comparison_patterns": {
+    "yoy_variance": {
+      "description": "Year-over-year variance exceeding threshold",
+      "threshold_percent": 15,
+      "severity": "warning"
+    },
+    "budget_variance": {
+      "description": "Actual vs budget/forecast variance exceeding threshold",
+      "threshold_percent": 10,
+      "severity": "warning"
+    },
+    "peer_variance": {
+      "description": "Regional or product peer variance exceeding threshold",
+      "threshold_percent": 20,
+      "severity": "informational"
+    }
+  },
+  "severity_levels": {
+    "critical": {
+      "label": "Critical",
+      "icon": "🔴",
+      "description": "Immediate action required — significant business impact",
+      "sla": "today or next business day"
+    },
+    "warning": {
+      "label": "Warning",
+      "icon": "🟡",
+      "description": "Near-term attention needed — trending toward impact",
+      "sla": "end of week"
+    },
+    "informational": {
+      "label": "Informational",
+      "icon": "🟢",
+      "description": "Awareness only — positive trend or minor observation",
+      "sla": "no due date"
+    }
+  }
+}
