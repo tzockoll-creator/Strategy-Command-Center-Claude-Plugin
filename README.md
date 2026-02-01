@@ -110,6 +110,7 @@ strategy-command-center/
 - **Use natural language, not SQL.** Both Strategy AI agents and the MCP USL accept natural language queries. Write questions the way you would ask a colleague (e.g., "What were total sales last quarter by region?").
 - **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
 - **Dashboard viewing defaults.** For dashboard analysis only, use `demo.microstrategy.com` as the default environment and the **Office Royale Sales** dashboard unless otherwise specified. For all other analysis (data queries, reporting, etc.), use the Strategy USL and Strategy Agent MCPs directly.
+- **Tool routing fallback.** If no specific project or assignee is configured for an enterprise tool (e.g., no Asana project set), discover the best-fit project or workspace in that tool automatically rather than skipping the routing. Use the tool's MCP to list available projects/workspaces and select the most relevant one based on LOB context and finding type.
 
 ## Customization
 

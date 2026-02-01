@@ -13,6 +13,7 @@ This skill is invoked automatically when a compliance or strategy review needs d
 - **Use natural language, not SQL.** Both Strategy AI agents and the MCP USL accept natural language queries. Write questions the way you would ask a colleague (e.g., "Show me dashboards with declining revenue trends").
 - **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
 - **Default environment and dashboard.** For dashboard viewing and analysis (this skill), use `demo.microstrategy.com` as the default environment and the **Office Royale Sales** dashboard unless otherwise specified. For all other analysis (data queries, reporting, etc.), use the Strategy USL and Strategy Agent MCPs directly.
+- **Tool routing fallback.** If no specific project or assignee is configured for an enterprise tool, discover the best-fit project or workspace in that tool automatically rather than skipping the routing.
 
 ### 1. Discover — Browse the Strategy Library
 

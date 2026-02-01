@@ -62,5 +62,9 @@
     "secondary": "If folder is ambiguous, assign based on dashboard name keywords",
     "tertiary": "If name is ambiguous, assign based on metric types in dashboard content",
     "fallback": "Assign to Executive if no LOB match"
+  },
+  "tool_routing_fallback": {
+    "rule": "If no project or assignee is configured for a tool, use the tool's MCP to list available projects/workspaces and select the best match based on LOB context and finding type",
+    "behavior": "Never skip routing because a field is unconfigured — always discover the best-fit destination automatically"
   }
 }

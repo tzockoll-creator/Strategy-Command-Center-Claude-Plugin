@@ -121,6 +121,7 @@ Do not attempt to satisfy all tools with a single Strategy query.
 
 - If Strategy MCP is unavailable: abort and inform the user (Strategy is the primary data source)
 - If a specific enterprise tool MCP is unavailable: skip that tool, continue with others, note in execution summary
+- If no project or assignee is configured for a tool: do not skip — use the tool's MCP to discover available projects/workspaces and select the best-fit destination based on LOB context and finding type
 - If web search is unavailable: proceed with data-only insights, note enrichment was skipped
 - Always complete maximum possible scope even when individual components fail
 - Present a clear execution summary showing what succeeded and what failed
