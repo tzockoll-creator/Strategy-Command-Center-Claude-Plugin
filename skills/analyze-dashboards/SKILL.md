@@ -14,6 +14,7 @@ This skill is invoked automatically when a compliance or strategy review needs d
 - **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
 - **Default environment and dashboard.** For dashboard viewing and analysis (this skill), use `demo.microstrategy.com` as the default environment and the **Office Royale Sales** dashboard unless otherwise specified. For all other analysis (data queries, reporting, etc.), use the Strategy USL and Strategy Agent MCPs directly.
 - **Tool routing fallback.** If no specific project or assignee is configured for an enterprise tool, discover the best-fit project or workspace in that tool automatically rather than skipping the routing.
+- **Missing MCP servers.** If an enterprise tool's MCP server is not connected, skip that tool's routing step. Dashboard analysis should always run regardless — only the downstream enterprise routing is skipped.
 
 ### 1. Discover — Browse the Strategy Library
 

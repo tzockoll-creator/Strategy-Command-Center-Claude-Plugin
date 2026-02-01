@@ -111,6 +111,7 @@ strategy-command-center/
 - **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
 - **Dashboard viewing defaults.** For dashboard analysis only, use `demo.microstrategy.com` as the default environment and the **Office Royale Sales** dashboard unless otherwise specified. For all other analysis (data queries, reporting, etc.), use the Strategy USL and Strategy Agent MCPs directly.
 - **Tool routing fallback.** If no specific project or assignee is configured for an enterprise tool (e.g., no Asana project set), discover the best-fit project or workspace in that tool automatically rather than skipping the routing. Use the tool's MCP to list available projects/workspaces and select the most relevant one based on LOB context and finding type.
+- **Missing MCP servers.** If an enterprise tool's MCP server is not connected, skip that tool's routing step entirely. Dashboard analysis (via the Strategy MCP) should always run regardless — only the downstream enterprise routing is skipped.
 
 ## Customization
 
