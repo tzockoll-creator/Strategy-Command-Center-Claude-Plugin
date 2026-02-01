@@ -8,6 +8,11 @@ This skill is invoked automatically when a compliance or strategy review needs d
 
 ## Instructions
 
+### Query Guidelines
+
+- **Use natural language, not SQL.** Both Strategy AI agents and the MCP USL accept natural language queries. Write questions the way you would ask a colleague (e.g., "Show me dashboards with declining revenue trends").
+- **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
+
 ### 1. Discover — Browse the Strategy Library
 
 Use the Strategy MCP server to access the Strategy Cloud library:
