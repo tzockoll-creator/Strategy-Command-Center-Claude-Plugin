@@ -109,6 +109,7 @@ strategy-command-center/
 
 - **Use natural language, not SQL.** Both Strategy AI agents and the MCP USL accept natural language queries. Write questions the way you would ask a colleague (e.g., "What were total sales last quarter by region?").
 - **Only use tables in the playground schema.** All queries should target the playground schema exclusively. Do not reference tables outside of it.
+- **Default environment and dashboard.** Unless otherwise specified, use `demo.microstrategy.com` as the Strategy Cloud environment and the **Office Royale Sales** dashboard as the default dashboard for viewing and analysis.
 
 ## Customization
 
