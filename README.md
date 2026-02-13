@@ -4,6 +4,10 @@ A Claude Code plugin that orchestrates business intelligence analysis across Str
 
 **Single request → Strategy analysis → Intelligent routing → Enterprise-wide action**
 
+## Demo
+
+[![Strategy Command Center Demo](https://img.youtube.com/vi/j_8tnZJroms/maxresdefault.jpg)](https://www.youtube.com/watch?v=j_8tnZJroms)
+
 ## What It Does
 
 1. **Discover** — Browses the Strategy Cloud library and inventories all dashboards
